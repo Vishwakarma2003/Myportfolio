@@ -1,0 +1,134 @@
+*{
+margin:0;
+padding:0;
+}
+
+.container
+{
+display: flex;
+height:100vh;
+}
+
+.header{
+position:absolute;
+background-color:orange;
+width:100%;
+height:15%;
+}
+.logo{
+width:200px;
+height:150px;
+margin:0;
+}
+.sidebar{
+position:absolute;
+background-color:orange;
+height:100vh;
+transition:transform 0.3s ease-in;
+}
+
+.sidebar nav{
+padding:45px;
+}
+
+.sidebar nav li{
+list-style:none;
+font-size:30px;
+padding:33px 0;
+
+}
+
+.sidebar nav li a{
+text-decoration:none;
+color:white;
+
+}
+.sidebar nav li a:hover{
+color: black;
+}
+
+.main{
+width:100vw;
+}
+
+.info{
+height:58vh;
+width:80vw;
+margin:144px auto;
+display:flex;
+justify-content:space-around;
+}
+
+.devinfo{
+display:flex;
+justify-content:center;
+flex-direction:column;
+}
+
+.hello{
+font-size:40px;
+}
+
+.name{
+font-size:45px;
+font-weight:bold;
+}
+.about{
+font-size:30px;
+}
+
+.buttons{
+margin-top:34px;
+}
+
+.buttons button{
+padding:9px 14px;
+border:none;
+border-radius:22px;
+background-color:orange;
+font-size:21px;
+margin:0 3px;
+cursor:pointer;
+}
+
+.buttons button:hover
+{
+background-color:green;
+color:white;
+}
+
+.devpic img{
+width:381px;
+height:58vh;
+}
+.sidebarGo{
+transform:translate(-443px, 0px);
+position:absolute;
+}
+
+.hamburger
+{
+position:absolute;
+cursor:pointer;
+top:20px;
+left:10px;
+}
+.cross{
+margin-left:156px;
+}
+.cross:hover{
+background-color:red;
+}
+.navbar{
+background-color:pink;
+height:300px;
+}
+@media (max-width:1615px){
+.intro,.resume,{
+margin:8px;
+}
+.devinfo{
+margin-top:60px;
+}
+}
+
